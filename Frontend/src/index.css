@@ -1,0 +1,42 @@
+/* src/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Teko:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fontstyle{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@layer utilities {
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .animate-fade-in {
+      animation: fadeIn 0.3s ease-out;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 0.3s ease-out;
+  }
